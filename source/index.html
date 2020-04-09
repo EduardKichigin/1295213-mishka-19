@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Милые штучки ручной работы для дома</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,16 +14,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Каталог товаров</a>
+            <a class="site-list__link" href="#">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -31,8 +32,8 @@
       <h1 class="page-main__title">Милые штучки ручной работы для дома</h1>
       <section class="product">
         <ul class="product__list sales-list">
-          <li class="sales-list__item">Предметы интерьера</li>
-          <li class="sales-list__item">Детские игрушки</li>
+          <li class="sales-list__item sales-list__item--interior">Предметы интерьера</li>
+          <li class="sales-list__item sales-list__item--toys">Детские игрушки</li>
         </ul>
       </section>
       <section class="product-week">
@@ -42,16 +43,16 @@
           <p class="week-basket__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="week-basket__desc basket">
             <tr class="basket__color">
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
+              <td class="basket__property">Цвет:</td>
+              <td class="basket__value">«Тиффани»/серый</td>
             </tr>
              <tr class="basket__diameter">
-              <td>Диаметр:</td>
-              <td>25см</td>
+              <td class="basket__property">Диаметр:</td>
+              <td class="basket__value">25см</td>
             </tr>
             <tr class="basket__height">
-              <td>Высота:</td>
-              <td>15см</td>
+              <td class="basket__property">Высота:</td>
+              <td class="basket__value">15см</td>
             </tr>
           </table>
           <img class="week-basket__image" src="" width="260" height="195" alt="вязаные корзинки">
