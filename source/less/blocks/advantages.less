@@ -1,19 +1,59 @@
-/*.advantages {
+.advantages {
+  width: 260px;
+  margin: 0 auto;
 }
-*/
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 700px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
 }
-/*
+
 .advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-*/
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 .advantages__items {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  padding-top: 90px;
+  max-width: 300px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__items {
+    padding-top: 100px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 /*
 .advantages__items--style {
@@ -29,5 +69,4 @@
 }
 
 .advantages__items--present {
-}
-*/
+} */

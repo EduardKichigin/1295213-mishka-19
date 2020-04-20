@@ -1,8 +1,38 @@
 /*.main-nav {
-}
-
-.main-nav__toggle {
-}
-
-main-nav__list {
 }*/
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+/*
+.main-nav__list {
+}*/
+
+.main-nav__delivery-link {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__delivery-link {
+    display: block;
+    order: 3;
+    width: auto;
+    text-align: right;
+    max-height: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__delivery-link {
+    order: 4;
+    width: auto;
+    text-align: right;
+  }
+}

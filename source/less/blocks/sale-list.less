@@ -1,0 +1,39 @@
+.sale-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .sale-list {
+    order: 3;
+    width: 50%;
+    display: flex;
+  }
+}
+
+.sale-list__item {
+  list-style-type: none;
+  min-height: 103px;
+}
+
+.sale-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @text-color;
+  text-decoration: none;
+  display: block;
+  height: 79px;
+  border: 1px solid @border-color;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: @desktop-width) {
+  .sale-list__link {
+    padding: 0;
+    max-height: 0;
+    border: none;
+  }
+}
