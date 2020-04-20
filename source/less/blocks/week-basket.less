@@ -1,23 +1,35 @@
 /*.week-basket {
 }*/
 
+@media (min-width: @tablet-width) {
+  .week-basket__wrapper {
+    display: flex;
+  }
+}
+
 .week-basket__title {
   font-size: 25px;
   line-height: 40px;
   font-weight: bold;
 }
 
+@media (min-width: @desktop-width) {
+  .week-basket__title {
+    order: 2;
+  }
+}
+
 .week-basket__subtitle {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  color: #63d1bb;
+  color: @type-color;
 }
 
 .week-basket__text {
   font-size: 15px;
   line-height: 24px;
-  color: #444444;
+  color: @button-color;
 }
 /*
 .week-basket__desc {
@@ -26,11 +38,24 @@
 .week-basket__image {
 }*/
 
+@media (min-width: @tablet-width) {
+  .week-basket__image {
+    position: absolute;
+    top: 0;
+    left: 380px;
+  }
+}
+/*
+@media (min-width: @desktop-width) {
+  .week-basket__image {
+  }
+}*/
+
 .week-basket__price {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  color: #444444;
+  color: @button-color;
 }
 /*
 .week-basket__order {

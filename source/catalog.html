@@ -7,53 +7,76 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
         <img class="page-header__logo-image" src="" width="86" height="35" alt="логотип компании">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list sale-list">
+            <li class="sale-list__item">
+              <a class="sale-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="sale-list__item">
+              <a class="sale-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <a href="#" class="main-nav__delivery-link">Бесплатная доставка по России</a>
+        </nav>
+      </div>
     </header>
     <main class="catalog-main">
-      <h1 class="catalog-main__title">Каталог товаров</h1>
+      <div class="catalog-main__title__wrapper">
+        <div class="catalog-main__title__wrapper2">
+          <h1 class="catalog-main__title">Каталог товаров</h1>
+        </div>
+      </div>
       <section class="catalog-main__catalog catalog">
         <ul class="catalog__list card">
           <li class="card__item rabbit">
-            <img class="card__image" src="" width="260" height="195" alt="игрушка зайчик-попрыгайчик">
-            <h2 class="card__title">Зайчик-попрыгайчик</h2>
-            <p class="card__text">рост 30 см, вес 200 г</p>
-            <b class="card__price">1 200 руб.</b>
+            <img class="card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="игрушка зайчик-попрыгайчик">
+            <div>
+              <h2 class="card__title">Зайчик-попрыгайчик</h2>
+              <p class="card__text">рост 30 см, вес 200 г</p>
+              <b class="card__price">1 200 руб.</b>
+            </div>
           </li>
           <li class="card__item toy-basket">
-            <img class="card__image" src="" width="260" height="195" alt="корзинка для белья">
-            <h2 class="card__title">Корзинка для белья</h2>
-            <p class="card__text">диаметр 15 см, высота 10 см</p>
-            <b class="card__price">690 руб.</b>
+            <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзинка для белья">
+            <div>
+              <h2 class="card__title">Корзинка для белья</h2>
+              <p class="card__text">диаметр 15 см, высота 10 см</p>
+              <b class="card__price">690 руб.</b>
+            </div>
           </li>
           <li class="card__item  big-basket">
-            <img class="card__image" src="" width="260" height="195" alt="большая корзинка для игрушек">
-            <h2 class="card__title">Большая корзинка для игрушек</h2>
-            <p class="card__text">диаметр 30 см, высота 30 см</p>
-            <b class="card__price">1 500 руб.</b>
+            <img class="card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="большая корзинка для игрушек">
+            <div>
+              <h2 class="card__title">Большая корзинка для игрушек</h2>
+              <p class="card__text">диаметр 30 см, высота 30 см</p>
+              <b class="card__price">1 500 руб.</b>
+            </div>
           </li>
           <li class="card__item video">
             <h2 class="сard__title">Процесс производства</h2>
             <a class="card__link" href="#">
-              <img class="card__image" src="#" width="260" height="150" alt="видео процесса производства">
+            <img class="card__image" src="#" width="260" height="150" alt="видео процесса производства">
             </a>
             <button class="card__button" type="button" aria-label="Запустить видео">
               <svg> </svg>
@@ -65,13 +88,18 @@
         </ul>
       </section>
     </main>
-  <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">instagram</li>
-        <li class="social__item">facebook</li>
-        <li class="social__item">twitter</li>
-      </ul>
-      <p class="page-footer__academy">Разработано</p>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="" width="86" height="35" alt="логотип компании">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">instagram</li>
+          <li class="social__item">facebook</li>
+          <li class="social__item">twitter</li>
+        </ul>
+        <p class="page-footer__academy">Разработано</p>
+      </div>
     </footer>
   </body>
 </html>

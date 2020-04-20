@@ -1,16 +1,41 @@
-/*.sales-list {
-}*/
+.sales-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .sales-list {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 .sales-list__item {
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: @background-color;
+  min-height: 103px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .sales-list__item {
+    width: 668px;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .sales-list__item--interior {
-  background: #63d1bb;
+  background: @type-color;
 }
 
 .sales-list__item--toys {
-  background: #56c3b2;
+  background: @toy-color;
 }

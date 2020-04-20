@@ -1,6 +1,23 @@
 /*.basket {
+}*/
+
+.basket__wrapper {
+  position: relative;
 }
 
+@media (min-width: @tablet-width) {
+  .basket__wrapper {
+    width: 334px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .basket__wrapper {
+    width: 350px;
+    padding-left: 225px;
+  }
+}
+/*
 .basket__color {
 }
 
@@ -13,11 +30,11 @@
 .basket__property {
   font-size: 15px;
   line-height: 20px;
-  color: #444444;
+  color: @button-color;
 }
 
 .basket__value {
   font-size: 15px;
   line-height: 20px;
-  color: #444444;
+  color: @button-color;
 }
