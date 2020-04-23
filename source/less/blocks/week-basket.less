@@ -4,6 +4,17 @@
 @media (min-width: @tablet-width) {
   .week-basket__wrapper {
     display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-basket__wrapper {
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
+    padding-left: 50px;
   }
 }
 
@@ -24,6 +35,12 @@
   line-height: 20px;
   font-weight: bold;
   color: @type-color;
+}
+
+@media (min-width: @tablet-width) {
+  .week-basket__subtitle {
+    padding-top: 12px;
+  }
 }
 
 .week-basket__text {
