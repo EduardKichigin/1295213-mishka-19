@@ -7,12 +7,26 @@
     width: 668px;
     margin: 0 auto;
   }
+
+  .week-basket__subtitle {
+    padding-top: 12px;
+  }
+
+  .week-basket__image {
+    position: absolute;
+    top: 0;
+    left: 380px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .week-basket__title {
+    order: 2;
+  }
+
   .week-basket__wrapper {
     display: flex;
-    width: 1150px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 50px;
   }
@@ -24,23 +38,11 @@
   font-weight: bold;
 }
 
-@media (min-width: @desktop-width) {
-  .week-basket__title {
-    order: 2;
-  }
-}
-
 .week-basket__subtitle {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: @type-color;
-}
-
-@media (min-width: @tablet-width) {
-  .week-basket__subtitle {
-    padding-top: 12px;
-  }
 }
 
 .week-basket__text {
@@ -55,13 +57,7 @@
 .week-basket__image {
 }*/
 
-@media (min-width: @tablet-width) {
-  .week-basket__image {
-    position: absolute;
-    top: 0;
-    left: 380px;
-  }
-}
+
 /*
 @media (min-width: @desktop-width) {
   .week-basket__image {

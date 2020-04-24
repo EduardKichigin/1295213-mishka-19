@@ -4,7 +4,7 @@
   background-color: @footer-color;
 }
 
-.catalog-main__title__wrapper2 {
+.catalog-main__title__container {
   width: 260px;
   height: 177px;
   margin: 0 auto;
@@ -14,16 +14,6 @@
   padding-right: 30px;
 }
 
-@media (min-width: @tablet-width) {
-  .catalog-main__title__wrapper2 {
-    width: 668px;
-    height: 225px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    justify-content: center;
-  }
-}
 
 .catalog-main__title {
   font-size: 27px;
@@ -40,6 +30,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-main__title__container {
+    width: 668px;
+    height: 225px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
   .catalog-main__catalog {
     width: 668px;
     padding-left: 50px;
