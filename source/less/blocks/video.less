@@ -1,0 +1,38 @@
+@media (min-width: @tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    height: 743px;
+  }
+
+  .video__title {
+    order: 2;
+  }
+
+  .video__link {
+    display: block;
+    width: 455px;
+  }
+
+  .video__text {
+    display: block;
+    order: 3;
+  }
+
+  .video__order {
+    display: block;
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 370px;
+    margin-left: auto;
+  }
+
+  .video__link {
+    position: absolute;
+    left: 0;
+  }
+}
