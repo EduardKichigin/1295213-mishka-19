@@ -7,6 +7,7 @@
   height: 160px;
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,6 +28,7 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+  padding-left: 35px;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,6 +38,8 @@
     padding-left: 50px;
     padding-right: 50px;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .page-footer__logo {
@@ -48,5 +52,12 @@
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__academy {
+    padding-left: 0;
+    padding-right: 55px;
   }
 }
