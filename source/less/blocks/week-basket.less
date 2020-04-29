@@ -1,41 +1,11 @@
 /*.week-basket {
 }*/
 
-@media (min-width: @tablet-width) {
-  .week-basket__wrapper {
-    display: flex;
-    width: 668px;
-    margin: 0 auto;
-  }
-
-  .week-basket__subtitle {
-    padding-top: 12px;
-  }
-
-  .week-basket__image {
-    position: absolute;
-    top: 0;
-    left: 380px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .week-basket__title {
-    order: 2;
-  }
-
-  .week-basket__wrapper {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 50px;
-  }
-}
-
 .week-basket__title {
   font-size: 25px;
   line-height: 40px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .week-basket__subtitle {
@@ -43,25 +13,24 @@
   line-height: 20px;
   font-weight: bold;
   color: @type-color;
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .week-basket__text {
   font-size: 15px;
   line-height: 24px;
   color: @button-color;
+  margin-bottom: 20px;
 }
-/*
+
 .week-basket__desc {
+  height: 114px;
+  margin-bottom: 30px;
 }
-
-.week-basket__image {
-}*/
-
-
 /*
-@media (min-width: @desktop-width) {
-  .week-basket__image {
-  }
+.week-basket__image {
 }*/
 
 .week-basket__price {
@@ -69,8 +38,106 @@
   line-height: 24px;
   font-weight: bold;
   color: @button-color;
+  text-align: center;
+  margin-bottom: 30px;
 }
-/*
+
 .week-basket__order {
+  width: 260px;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
 }
-*/
+
+@media (min-width: @tablet-width) {
+  .week-basket__wrapper {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .week-basket__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .week-basket__subtitle {
+    display: flex;
+    margin-left: auto;
+    width: 100px;
+    padding-bottom: 0;
+    padding-top: 7px;
+  }
+
+  .week-basket__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+
+  .week-basket__image {
+    position: absolute;
+    top: 0;
+    left: 380px;
+  }
+
+  .week-basket__desc {
+    margin-bottom: 62px;
+  }
+
+  .week-basket__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
+  }
+
+  .week-basket__order {
+    width: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-basket__title {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .week-basket__subtitle {
+    font-size: 17px;
+    line-height: 17px;
+    margin-left: 0;
+    padding-right: 22px;
+    padding-top: 12px;
+  }
+
+  .week-basket__wrapper {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 47px;
+    padding-left: 50px;
+  }
+
+  .week-basket__text {
+    padding-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .week-basket__desc {
+    margin-bottom: 115px;
+  }
+
+  .week-basket__price {
+    text-align: left;
+    padding-left: 72px;
+  }
+}
