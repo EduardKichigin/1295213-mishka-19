@@ -8,25 +8,33 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#">
+        <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="" width="86" height="35" alt="логотип компании">
         </a>
         <button class="page-header__toggle" type="button"></button>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">
+                <p class="user-list__link__text">Каталог товаров</p>
+              </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">
+                <p class="user-list__link__text">Вязание на заказ</p>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+              <a class="user-list__link user-list__link--search" href="#">
+                <p class="user-list__link__text">Поиск по сайту</p>
+              </a>
             </li>
             <li class="user-list__item">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              <a class="user-list__link" href="#">
+                <p class="user-list__link__text">Корзина: пока пуста</p>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list sale-list">
@@ -54,7 +62,7 @@
             <div class="card__item__container">
               <h2 class="card__title">Зайчик-попрыгайчик</h2>
               <p class="card__text">рост 30 см, вес 200 г</p>
-              <b class="card__price">1 200 руб.</b>
+              <a class="card__price" href="#">1 200 руб.</a>
             </div>
           </li>
           <li class="card__item toy-basket">
@@ -62,7 +70,7 @@
             <div class="card__item__container">
               <h2 class="card__title">Корзинка для белья</h2>
               <p class="card__text">диаметр 15 см, высота 10 см</p>
-              <b class="card__price">690 руб.</b>
+              <a class="card__price" href="#">690 руб.</a>
             </div>
           </li>
           <li class="card__item  big-basket">
@@ -70,7 +78,7 @@
             <div class="card__item__container">
               <h2 class="card__title">Большая корзинка для игрушек</h2>
               <p class="card__text">диаметр 30 см, высота 30 см</p>
-              <b class="card__price">1 500 руб.</b>
+              <a class="card__price" href="#">1 500 руб.</a>
             </div>
           </li>
           <li class="card__item card__item--video">
@@ -82,7 +90,7 @@
               <svg> </svg>
             </button>
             <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары. </p>
-            <button class="video__order button" type="button">сделать заказ</button>
+            <a class="video__order">сделать заказ</a>
           </li>
         </ul>
       </section>
