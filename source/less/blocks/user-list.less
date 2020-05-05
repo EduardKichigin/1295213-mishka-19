@@ -17,8 +17,12 @@
   height: 79px;
   padding-top: 25px;
   border: 1px solid @border-color;
-  text-align: center;
   box-sizing: border-box;
+}
+
+.user-list__link__text {
+  width: 183px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,6 +41,10 @@
   .user-list__link {
     border: none;
     height: 89px;
+  }
+
+  .user-list__link__text {
+    width: auto;
   }
 
   .user-list__link--search {
