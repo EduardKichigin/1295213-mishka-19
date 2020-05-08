@@ -1,5 +1,6 @@
-/*.week-basket {
-}*/
+.week-basket {
+  position: relative;
+}
 
 .week-basket__title {
   font-size: 25px;
@@ -88,8 +89,8 @@
 
   .week-basket__image {
     position: absolute;
-    top: 0;
-    left: 380px;
+    top: 107px;
+    left: 334px;
   }
 
   .week-basket__desc {
@@ -110,6 +111,7 @@
 @media (min-width: @desktop-width) {
   .week-basket__title {
     order: 2;
+    z-index: 1;
     font-size: 53px;
     line-height: 57px;
   }
@@ -137,6 +139,12 @@
 
   .week-basket__desc {
     margin-bottom: 115px;
+  }
+
+  .week-basket__image {
+    position: absolute;
+    top: -54px;
+    left: 525px;
   }
 
   .week-basket__price {
