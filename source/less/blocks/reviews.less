@@ -39,16 +39,26 @@
   color: @button-color;
 }
 
-.reviews__left {
+.reviews__button {
+  display: inline-block;
   width: 130px;
   height: 51px;
-  border: 1px solid @border-color;
-}
+  padding: 0;
+  padding-top: 8px;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: transparent;
+  border: 1px solid #c6c6c6;
+  cursor: pointer;
 
-.reviews__right {
-  width: 130px;
-  height: 51px;
-  border: 1px solid @border-color;
+  &:hover svg {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active svg {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .reviews__write {
@@ -64,6 +74,15 @@
   display: block;
   padding-top: 12px;
   text-align: center;
+
+  &:hover {
+    color: @background-color;
+    background-color: @button-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .reviews__button-wrapper {
@@ -120,6 +139,19 @@
 
   .reviews__button-wrapper {
     margin-top: 25px;
+  }
+
+  .reviews__button {
+    border: none;
+    width: 88px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }
 

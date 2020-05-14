@@ -10,6 +10,19 @@
   display: flex;
   flex-direction: column;
   min-height: 374px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card__item-link {
+  text-decoration: none;
+  color: @text-color;
 }
 
 .card__item__container {
@@ -26,6 +39,39 @@
   line-height: 24px;
   font-weight: bold;
   margin-bottom: -3px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 102px;
+    left: 185px;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+
+    svg {
+      opacity: 1;
+      fill: @type-color;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+
+.card__title--big {
+  padding-right: 28px;
+
+  svg {
+    position: absolute;
+    top: 125px;
+    left: 185px;
+    opacity: 0.2;
+  }
 }
 
 .card__text {
@@ -62,7 +108,7 @@
 @media (min-width: @tablet-width) {
   .card__item {
     flex-direction: row;
-    margin-bottom: 54px;
+    margin-bottom: 51px;
     min-height: 334px;
     height: 334px;
   }
@@ -71,6 +117,11 @@
     font-size: 20px;
     line-height: 24px;
     width: 230px;
+
+    svg {
+      top: 257px;
+      left: 254px;
+    }
   }
 
   .card__text {
@@ -108,6 +159,7 @@
     width: 315px;
     height: 659px;
     flex-direction: column;
+    margin-bottom: 54px;
   }
 
   .card__item--video {
@@ -127,5 +179,11 @@
 
   .card__title {
     padding-right: 55px;
+    margin-top: 12px;
+
+    svg {
+      top: 121px;
+      left: 237px;
+    }
   }
 }

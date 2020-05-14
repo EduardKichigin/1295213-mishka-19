@@ -1,14 +1,14 @@
 .advantages {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 85px;
+  margin-bottom: 0;
 }
 
 .advantages__list {
@@ -17,7 +17,6 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  height: 650px;
   justify-content: space-between;
 }
 
@@ -25,22 +24,83 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  padding-top: 83px;
 }
 
 .advantages__items--ecology {
   width: 190px;
+  position: relative;
+
+  .ecology-svg {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 6px;
+    fill: @type-color;
+  }
 }
 
 .advantages__items--style {
   width: 210px;
+  position: relative;
+
+  .style-svg {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    fill: @type-color;
+  }
 }
 
 .advantages__items--like {
   width: 195px;
+  position: relative;
+
+  .like-svg {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 7px;
+    fill: @type-color;
+  }
+}
+
+.advantages__items--love {
+  position: relative;
+
+  .love-svg {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 4px;
+    fill: @type-color;
+  }
+}
+
+.advantages__items--support {
+  position: relative;
+
+  .support-svg {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: -5px;
+    fill: @type-color;
+  }
 }
 
 .advantages__items--present {
   width: 215px;
+  position: relative;
+
+  .present-svg {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 2px;
+    fill: @type-color;
+  }
 }
 
 
@@ -60,14 +120,14 @@
   }
 
   .advantages__list {
-    max-height: 450px;
+    max-height: 460px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
   .advantages__items {
-    padding-top: 100px;
+    padding-top: 107px;
     font-size: 20px;
     line-height: 22px;
     width: 295px;
@@ -75,19 +135,65 @@
 
   .advantages__items--ecology {
     width: 230px;
+
+    .ecology-svg {
+      content: "";
+      position: absolute;
+      top: 49px;
+      left: 6px;
+    }
+  }
+
+  .advantages__items--love {
+    .love-svg {
+      content: "";
+      position: absolute;
+      top: 55px;
+      left: 4px;
+    }
   }
 
   .advantages__items--style {
     width: 235px;
+
+    .style-svg {
+      content: "";
+      position: absolute;
+      top: 53px;
+      left: 0;
+    }
+  }
+
+  .advantages__items--support {
+    .support-svg {
+      content: "";
+      position: absolute;
+      top: 56px;
+      left: -5px;
+    }
   }
 
   .advantages__items--like {
     width: 235px;
     padding-right: 59px;
+
+    .like-svg {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 7px;
+    }
   }
 
   .advantages__items--present {
     width: 240px;
+
+    .present-svg {
+      content: "";
+      position: absolute;
+      top: 55px;
+      left: 2px;
+    }
   }
 }
 
