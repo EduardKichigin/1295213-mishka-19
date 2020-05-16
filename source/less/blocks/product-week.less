@@ -1,3 +1,11 @@
+.product-week__wrapper {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: 260px 5px;
+  background-position: top 798px center;
+  background-repeat: no-repeat;
+  min-height: 812px;
+}
+
 .product-week {
   width: 260px;
   margin: 0 auto;
@@ -18,12 +26,24 @@
     padding-right: 50px;
     margin-bottom: 120px;
   }
+
+  .product-week__wrapper {
+    background-size: 668px 16px;
+    background-position: top 564px center;
+    min-height: 629px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .product-week {
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
     margin-bottom: 155px;
+  }
+
+  .product-week__wrapper {
+    background-size: 1150px 25px;
+    background-position: top 654px center;
+    min-height: 738px;
   }
 }

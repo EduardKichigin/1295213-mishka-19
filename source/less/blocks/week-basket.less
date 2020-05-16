@@ -56,7 +56,19 @@
   display: block;
   padding-top: 12px;
   text-align: center;
+  text-decoration: none;
+  color: @button-color;
+
+  &:hover {
+    color: @background-color;
+    background-color: @button-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .week-basket__wrapper {

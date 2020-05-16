@@ -24,6 +24,14 @@
   font-size: 15px;
   line-height: 30px;
   color: @button-color;
+
+  &:hover {
+    color: @type-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__mail__title {
@@ -41,6 +49,7 @@
   font-size: 15px;
   line-height: 30px;
   color: @button-color;
+  padding-right: 31px;
 }
 
 .contacts__address__title {
@@ -69,13 +78,24 @@
   background-color: @background-color;
   padding-top: 12px;
   text-align: center;
+  text-decoration: none;
+  color: @button-color;
+
+  &:hover {
+    color: @background-color;
+    background-color: @button-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 
   .contacts__address__wrapper {
@@ -99,6 +119,11 @@
     margin: 0 auto;
     padding: 0 50px;
     margin-bottom: 41px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-size: 60px 82px;
+    background-position: right 47px top 0;
   }
 
   .contacts__flex-wrapper {
@@ -119,6 +144,7 @@
   .contacts__address {
     font-size: 17px;
     line-height: 30px;
+    padding-right: 31px;
   }
 
   .contacts__address__title {
@@ -150,7 +176,7 @@
     padding: 0 50px;
     display: flex;
     position: relative;
-    margin-bottom: 103px;
+    margin-bottom: 101px;
   }
 
   .contacts__wrapper {
@@ -159,6 +185,7 @@
     padding: 0 50px;
     padding-left: 175px;
     padding-top: 27px;
+    background-position: left 55px top 65px;
   }
 
   .contacts__write {

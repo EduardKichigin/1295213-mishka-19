@@ -5,8 +5,8 @@
   justify-content: center;
   width: 100%;
   min-width: 320px;
-  margin-bottom: 26px;
-  background-color: #f9f9f9;
+  margin-bottom: 23px;
+  background-color: @title-color;
 }
 
 .goods__list {
@@ -26,6 +26,7 @@
   display: flex;
   width: 100%;
   background-repeat: no-repeat;
+  text-decoration: none;
 
   &--interior {
     background-color: #63d1bb;
@@ -68,12 +69,12 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: @background-color;
 }
 
 @media (min-width: @tablet-width) {
   .goods {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
   }
 
   .goods__list {
