@@ -36,12 +36,12 @@ gulp.task("clean", function () {
 });
 
 gulp.task("copy", function () {
- return gulp.src([
- "source/fonts/**/*.{woff,woff2}",
- "source/img/**",
- 'source/css/*.css',
- "source/js/**",
- "source/*.ico"
+  return gulp.src([
+  "source/fonts/**/*.{woff,woff2}",
+  "source/img/**",
+  'source/css/*.css',
+  "source/js/**",
+  "source/*.ico"
  ], {
  base: "source"
  })
@@ -67,8 +67,8 @@ gulp.task("sprite", function () {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
- .pipe(webp({quality: 90}))
- .pipe(gulp.dest("source/img"));
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("images", function () {
