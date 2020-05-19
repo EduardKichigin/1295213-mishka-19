@@ -83,7 +83,7 @@ gulp.task("images", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -102,4 +102,4 @@ gulp.task("build", gulp.series(
   "html"
 ));
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("build", "server"));
